@@ -10,7 +10,7 @@ data_full <- read.csv("household_power_consumption.txt", header = TRUE, sep = ';
                       stringsAsFactors = FALSE, comment.char = "", quote = '\"')
 data_full$Date <- as.Date(data_full$Date, format = "%d/%m/%Y")
 
-## Here a subset is made of the data
+## Here a subset is made from the data
 
 data <- subset(data_full, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"))
 rm(data_full)
