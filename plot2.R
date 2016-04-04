@@ -18,6 +18,6 @@ rm(data_full)
 datetime <- paste(as.Date(data$Date), data$Time)
 data$Datetime <- as.POSIXct(datetime)
 
-## The following generates plot 2
+## The following generates Plot 2
 plot(data$Global_active_power ~ data$Datetime, type = "l",
      ylab = "Global Active Power (kilowatts)", xlab = "")
